@@ -1,3 +1,4 @@
+theme: jekyll-theme-minimal
 # BankFusion: Financial Machine Learning Hub
 
 Welcome to my website! As a fervent advocate for the intersection of Machine Learning and finance, particularly within banking and financial sectors, I am dedicated to pioneering innovative solutions that redefine traditional practices.
