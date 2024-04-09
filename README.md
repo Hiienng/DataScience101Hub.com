@@ -1,2 +1,3 @@
-# Hiienng.github.io
-Financial Machine Learning in Banks &amp; Financial Institutions
+# Financial Machine Learning in Banks &amp; Financial Institutions
+
+## Projects portfolio
