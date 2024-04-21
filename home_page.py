@@ -11,7 +11,7 @@ from streamlit_lottie import st_lottie
 from PIL import Image, ImageSequence
 import base64
 from chatbot import translate_tool
-from ibm_watson import LanguageTranslatorV3
+# from ibm_watson import LanguageTranslatorV3
 
 
 import os
