@@ -7,7 +7,7 @@
 
 nav{
     height: 80px;
-    background:#fdcc04;
+    background:#000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@ nav{
 }
 
 .logo {
-    color: #000;
+    color: #fdcc04;
     font-size: 1.5rem;
     font-weight: bold;
     font-style: italic;
@@ -24,11 +24,11 @@ nav{
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: #fdcc04;
     padding: 0 1.5rem;
 }
 .hero {
-    background: #fdcc04;
+    background: #000;
 }
 .hero-container {
     display: grid;
@@ -37,12 +37,16 @@ nav a {
     padding: 3rem calc((100vw - 1300px)/2);
 }
 
+.hero-container .column-left h1 {
+    font-size: 40px;
+}
+
 .column-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #000;
+    color: beige;
     padding: 0rem 2rem;
 }
 
