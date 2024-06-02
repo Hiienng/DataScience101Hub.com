@@ -52,16 +52,18 @@ nav a {
 
 
 button {
-    padding: 1ren 3rem;
+    padding: 1rem 3rem; /* Kích thước đệm x và y */
     font-size: 1rem;
     border: none;
-    color:antiquewhite;
+    color: antiquewhite;
     background: #000;
     cursor: pointer;
     border-radius: 50px;
+    transition: background 0.3s, color 0.3s, transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho background, color và transform */
 }
 
-button:hover{
-    background: #fff;
-    color:#000;
+button:hover {
+    background: #fdcc04;
+    color: #000;
+    transform: scale(1.1); /* Phóng to nút khi di chuột qua */
 }
