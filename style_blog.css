@@ -6,9 +6,14 @@ body {
 }
 
 nav {
-    width: 200px;
+    width: 180px;
     background-color: #f4f4f4;
     padding: 20px;
+    position: fixed; /* Làm cho nav cố định */
+    top: 0;
+    left: 0;
+    height: 100%; /* Đảm bảo nav chiếm toàn bộ chiều cao của trang */
+    overflow-y: auto; /* Thêm cuộn dọc nếu nội dung vượt quá chiều cao */
 }
 
 nav ul {
@@ -30,9 +35,20 @@ nav ul li a:hover {
     color: #6c63ff;
 }
 
+nav ul li ul {
+    list-style-type: none;
+    padding-left: 20px; /* Thụt lề các mục con */
+    display: none; /* Ẩn mục con ban đầu */
+}
+
+nav ul li ul.expanded {
+    display: block; /* Hiển thị mục con nếu được mở rộng */
+}
+
 main {
-    flex: 1;
+    margin-left: 220px; /* Để tránh nội dung bị che bởi nav */
     padding: 20px;
+    flex: 1;
 }
 
 header {
@@ -53,8 +69,15 @@ h2 {
     margin-bottom: 20px;
 }
 
-p {
+li, p {
     line-height: 1.5;
     text-align: justify;
     color: #333
+}
+
+img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều ngang của khối chứa */
+    height: auto; /* Giữ tỷ lệ chiều cao tự động */
+    display: block; /* Để ảnh là một block element */
+    margin: 0 auto; /* Canh giữa ảnh */
 }
