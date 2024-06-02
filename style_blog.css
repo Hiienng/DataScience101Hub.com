@@ -35,14 +35,26 @@ main {
     padding: 20px;
 }
 
-section {
+header {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 1px solid #c2c0c0;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-}
-
-h1 {
-    color: #6c63ff;
 }
 
 h2 {
     color: #333;
+    font-weight: bold;
+    background-color: #f4f4f4; /* Tô khối màu xám nhạt */
+    padding: 10px; /* Khoảng cách giữa văn bản và viền khối */
+    border-radius: 5px; /* Bo góc */
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    color: #333
 }
