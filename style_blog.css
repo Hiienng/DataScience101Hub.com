@@ -83,3 +83,10 @@ img {
     display: block; /* Để ảnh là một block element */
     margin: 0 auto; /* Canh giữa ảnh */
 }
+
+.toggle-icon {
+  display: inline-block;
+  width: 180px;
+  text-align: right;
+  margin-left: 10px;
+}
