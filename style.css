@@ -13,7 +13,11 @@ nav{
     align-items: center;
     padding: 0rem calc((100vw - 1300px)/2);
 }
-
+.nav-icon {
+    height: 30px; /* Điều chỉnh chiều cao của icon */
+    margin-right: 10px; /* Thêm khoảng cách giữa icon và text */
+    vertical-align: middle; /* Căn giữa icon với text */
+}
 .logo {
     color: #fdcc04;
     font-size: 1.5rem;
