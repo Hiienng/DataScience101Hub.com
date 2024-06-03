@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    width: 180px;
+    width: 190px;
     background-color: #f4f4f4;
     padding: 20px;
     position: fixed; /* Làm cho nav cố định */
@@ -48,7 +48,7 @@ nav ul li ul.expanded {
 }
 
 main {
-    margin-left: 220px; /* Để tránh nội dung bị che bởi nav */
+    margin-left: 230px; /* Để tránh nội dung bị che bởi nav */
     padding: 20px;
     flex: 1;
 }
