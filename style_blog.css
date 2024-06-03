@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    width: 190px;
+    width: 220px;
     background-color: #f4f4f4;
     padding: 20px;
     position: fixed; /* Làm cho nav cố định */
@@ -47,8 +47,15 @@ nav ul li ul.expanded {
     display: block; /* Hiển thị mục con nếu được mở rộng */
 }
 
+.toggle-icon {
+  display: inline-block;
+  width: 195px;
+  text-align: right;
+  margin-left: 10px;
+}
+
 main {
-    margin-left: 230px; /* Để tránh nội dung bị che bởi nav */
+    margin-left: 240px; /* Để tránh nội dung bị che bởi nav */
     padding: 20px;
     flex: 1;
 }
@@ -82,11 +89,4 @@ img {
     height: auto; /* Giữ tỷ lệ chiều cao tự động */
     display: block; /* Để ảnh là một block element */
     margin: 0 auto; /* Canh giữa ảnh */
-}
-
-.toggle-icon {
-  display: inline-block;
-  width: 180px;
-  text-align: right;
-  margin-left: 10px;
 }
