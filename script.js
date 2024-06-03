@@ -1,13 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const expandableLinks = document.querySelectorAll('.expandable');
+// Lấy tất cả các biểu tượng có class "toggle-icon"
+var toggleIcons = document.querySelectorAll('.toggle-icon');
 
-    expandableLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+// Thêm sự kiện click cho từng biểu tượng
+toggleIcons.forEach(function(icon) {
+  icon.addEventListener('click', function(event) {
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của biểu tượng
 
-            // Toggle lớp 'expanded' trên thẻ <ul> con
-            const subMenu = link.nextElementSibling;
-            subMenu.classList.toggle('expanded');
-        });
-    });
+    // Lấy menu con tương ứng với biểu tượng
+    var subMenu = this.parentElement.nextElementSibling;
+
+    // Hiển thị/ẩn menu con
+    if (subMenu.style.display === 'none') {
+      subMenu.style.display = 'block';
+      this.textContent = '▼'; // Thay đổi biểu tượng
+    } else {
+      subMenu.style.display = 'none';
+      this.textContent = '▶'; // Thay đổi biểu tượng
+    }
+  });
 });
